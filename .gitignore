@@ -1,0 +1,14 @@
+
+.DS_Store
+
+
+.venv/
+
+
+.env
+
+
+data/retail.sqlite
+data/fact_sales.csv
+data/raw/online_retail_II.csv
+data/raw/online_retail_II.xlsx
