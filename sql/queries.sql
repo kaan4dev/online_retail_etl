@@ -233,33 +233,3 @@ WHERE distinct_products =
     as n
 )
 GROUP BY customer_id
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Soru 42 – Ortalama Günlük Gelirin Üstünde Kalan Günler
-
-Her gün için toplam geliri (SUM(revenue)) bul.
-Sadece günlük ortalamanın üstünde kalan günleri listele.
-Sonuç: invoice_date, daily_revenue.
-(İçte günlük ortalama hesaplayan bir subquery olacak.)
