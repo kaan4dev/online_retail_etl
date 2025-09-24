@@ -84,10 +84,10 @@ GROUP BY stock_code
 ORDER BY SUM(n.quantity) DESC
 LIMIT 1;
 
-
-
-
-
-
-
-
+SELECT m.stock_code, n.description, SUM(m.quantity) as total_quantity FROM fact_sales AS m 
+JOIN dim_product AS n 
+ON m.stock_code = n.stock_code
+WHERE description LIKE '%LIGHTS%'
+GROUP BY m.stock_code, n.description
+ORDER BY SUM(n.total_quantity) DESC
+LIMIT 1;
